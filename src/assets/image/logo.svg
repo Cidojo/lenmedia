@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="102" viewBox="0 0 280 102">
+  <g id="logo" transform="translate(-210 -20)">
+    <rect id="лого" width="280" height="102" transform="translate(210 20)" fill="#ddd"/>
+    <text id="ЛОГО-2" transform="translate(350 77.5)" fill="#555" font-size="16" font-family="OpenSans-SemiBold, Open Sans" font-weight="600"><tspan x="-22.707" y="0">ЛОГО</tspan></text>
+  </g>
+</svg>
