@@ -1,0 +1,18 @@
+@use '../../styles/utils' as *;
+@use '../../styles/scaffolding/variables' as *;
+
+.button {
+    @include reset-button;
+    @include reset-outline;
+    padding: 10.5px 20px;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #fff;
+    font-weight: $font-weight-semibold;
+    background-color: $color-red;
+    border-radius: 5px;
+
+    &:active {
+        box-shadow: 0 2px 0 $color-dark-grey;
+    }
+}

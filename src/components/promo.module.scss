@@ -1,0 +1,43 @@
+@use '../styles/utils' as *;
+@use '../styles/scaffolding/variables' as *;
+
+.promo {
+    @include container;
+    box-sizing: content-box;
+    max-width: 580px;
+    margin-top: 48.5px;
+    margin-bottom: 48.5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.promo__headline {
+    margin-bottom: 37.5px;
+}
+
+.promo__content {
+    font-size: 16px;
+    line-height: 24px;
+
+    p {
+        margin: 0;
+
+        + p {
+            margin-top: 15px;
+        }
+    }
+
+    b {
+        font-weight: $font-weight-semibold;
+    }
+
+    mark {
+        font-weight: $font-weight-semibold;
+        color: $color-red;
+        background-color: transparent;
+    }
+}
+
+.promo__buyButton {
+    margin: 30px auto 0;
+}

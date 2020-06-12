@@ -1,0 +1,24 @@
+@use '../../styles/utils' as *;
+@use '../../styles/scaffolding/variables' as *;
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+
+    span {
+        display: inline-block;
+        width: 70px;
+        height: 3px;
+        margin-top: 6.5px;
+        font-size: 0;
+        line-height: 0;
+        background-color: $color-red;
+    }
+}
