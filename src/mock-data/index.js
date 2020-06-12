@@ -29,13 +29,13 @@ const reviewDefault = {
 	slug: '/'
 };
 
-export const reviewsData = new Array(7).fill(reviewDefault);
+export const reviewsData = new Array(2).fill(reviewDefault);
 
 export const promoTitle = 'О Компании';
 export const scheduleTitle = 'Часы работы';
 
 export const scheduleData = [
-	['ПН', '10-18'],
+	['ПН-ПТ', '10-18'],
 	['СБ', '10-16'],
 	['ВС', '12-16']
 ];

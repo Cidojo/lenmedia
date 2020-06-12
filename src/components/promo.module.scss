@@ -1,29 +1,27 @@
 @use '../styles/utils' as *;
 @use '../styles/scaffolding/variables' as *;
 
-.promo {
+.promo__inner {
     @include container;
     box-sizing: content-box;
-    max-width: 580px;
-    margin-top: 48.5px;
-    margin-bottom: 48.5px;
+    margin-top: 53.5px;
+    margin-bottom: 51px;
     padding-bottom: 10px;
     text-align: center;
 }
 
-.promo__headline {
-    margin-bottom: 37.5px;
-}
-
 .promo__content {
+    max-width: 580px;
+    margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
 
     p {
         margin: 0;
+        line-height: 1.5em;
 
         + p {
-            margin-top: 15px;
+            margin-top: 9px;
         }
     }
 
@@ -39,5 +37,11 @@
 }
 
 .promo__buyButton {
-    margin: 30px auto 0;
+    margin: 34px auto 0;
+}
+
+@include breakpoint(medium) {
+    .promo__content {
+        transform: translateX(19px);
+    }
 }

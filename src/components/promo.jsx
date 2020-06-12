@@ -10,14 +10,14 @@ export const Promo = ({ title, className, content }) => {
 		<section className={classNames(styles.promo, className)}>
 			<div className={styles.promo__inner}>
 				{title.length > 0 && (<Headline priority={2} title={title} underlined className={styles.promo__headline} />)}
-			</div>
-			<div className={styles.promo__content}>
-				{content.map((line, idx) => (
+				<div className={styles.promo__content}>
+					{content.map((line, idx) => (
 					// eslint-disable-next-line react/no-array-index-key
-					<p key={idx}>{parser(line)}</p>
-				))}
+						<p key={idx}>{parser(line)}</p>
+					))}
+				</div>
+				<Button label="Купить продукт" className={styles.promo__buyButton} />
 			</div>
-			<Button label="Купить продукт" className={styles.promo__buyButton} />
 		</section>
 	);
 };

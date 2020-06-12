@@ -15,4 +15,10 @@
         padding-left: 130px;
         padding-right: 130px;
     }
+
+    @include breakpoint('xlarge') {
+        max-width: 1600px;
+        padding-left: 210px;
+        padding-right: 210px;
+    }
 }

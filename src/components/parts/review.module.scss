@@ -31,34 +31,36 @@
             }
         }
     }
-}
 
-.review__author {
-    width: calc(100% - 120px);
-    text-transform: none;
-
-    > span {
-        transition: width 0.2s linear;
-    }
-}
-
-.review__contents {
     p {
         width: 100%;
+        margin: 0;
         font-size: 14.67px;
         line-height: 22px;
         font-style: italic;
     }
 }
 
+.review__author {
+    width: calc(100% - 120px);
+    margin-bottom: 20px;
+    text-transform: none;
+
+    > span {
+        margin-left: 1px;
+        margin-top: 11px;
+        transition: width 0.2s linear;
+    }
+}
+
 @include breakpoint(large) {
     .review {
-        padding: 40px 40px 40px 160px;
+        padding: 40px 39px 40px 158px;
 
         img {
             position: absolute;
-            left: 40px;
-            top: 40px;
+            left: 37px;
+            top: 38px;
         }
     }
 }

@@ -6,10 +6,12 @@ import styles from './header.module.scss';
 
 export const Header = () => (
 	<header className={styles.header}>
-		<div className={styles.header__logo}>
-			<Link to="/">
-				<Logo title="logo" />
-			</Link>
+		<div className={styles.header__inner}>
+			<div className={styles.header__logo}>
+				<Link to="/">
+					<Logo title="logo" />
+				</Link>
+			</div>
 		</div>
 		<Navigation className={styles.header__navigation} />
 	</header>

@@ -73,6 +73,7 @@
 
         li {
             flex-grow: 1;
+            width: 100%;
             padding: 14.5px 10px 13.5px;
             text-align: center;
         }
@@ -88,6 +89,7 @@
         color: inherit;
         font-weight: $font-weight-semibold;
         border-bottom: 1px solid transparent;
+        transition: border-color 0.2s linear;
 
         &:hover,
         &:focus {
@@ -112,7 +114,9 @@
     }
 
     .navigation__inner {
+        @include container;
         padding: 0;
+        background-color: transparent;
 
         ul {
             display: flex;
@@ -128,11 +132,13 @@
         a {
             width: 100%;
             padding: 14.5px 10px 13.5px;
+            transition: background-color 0.2s linear;
 
             &:hover,
             &:focus {
                 color: #fff;
                 background-color: $color-red;
+                border-color: transparent;
             }
         }
     }

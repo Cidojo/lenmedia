@@ -1,14 +1,14 @@
 @use '../styles/utils' as *;
 
 .header {
-    @include container;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .header__logo {
-    flex: 0 1 160px;
+    width: 160px;
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -23,16 +23,17 @@
     }
 }
 
-.header__navigation {
-
-}
-
 @include breakpoint(medium) {
     .header {
-        flex-wrap: wrap;
+        display: block;
+        padding: 0;
+    }
+
+    .header__inner {
+        @include container;
     }
 
     .header__logo {
-        flex: 0 1 280px;
+        width: 280px;
     }
 }
