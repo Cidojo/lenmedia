@@ -10,7 +10,7 @@
     justify-content: space-around;
     width: 40px;
     height: 40px;
-    padding: 4px;
+    padding: 6px 4px;
     border: 2px solid $color-dark-grey;
     border-radius: 3px;
 
@@ -29,6 +29,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 999;
         pointer-events: none;
         transition: background-color 0.3s linear;
         background-color: rgba(#000, 0);

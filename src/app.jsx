@@ -3,7 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Header } from './components/header';
 import { Promo } from './components/promo';
 import { Reviews } from './components/reviews';
-import { promoTitle, promoContent, reviewsData } from './mock-data';
+import { Footer } from './components/footer';
+import { Schedule } from './components/schedule';
+import { promoTitle, promoContent, reviewsData, scheduleData } from './mock-data';
 
 const App = () => {
 	return (
@@ -11,6 +13,8 @@ const App = () => {
 			<Header/>
 			<Promo title={promoTitle} content={promoContent} />
 			<Reviews reviews={reviewsData} />
+			<Schedule bodyData={scheduleData} />
+			<Footer />
 		</Router>
 	);
 };

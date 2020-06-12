@@ -1,0 +1,41 @@
+@use '../styles/utils' as *;
+@use '../styles/scaffolding/variables' as *;
+
+.schedule {
+    margin-top: 32.5px;
+
+    + footer {
+        margin-top: 60px;
+    }
+}
+
+.schedule__inner {
+    @include container;
+}
+
+.schedule__headline {
+    margin-bottom: 34.5px;
+}
+
+.schedule__table {
+    width: 240px;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    tr {
+        &:nth-of-type(odd) {
+            td {
+                background-color: $color-darker-grey;
+            }
+        }
+    }
+
+    td {
+        width: 50%;
+        min-height: 40px;
+        padding: 11px 10px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+}
