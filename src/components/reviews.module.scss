@@ -25,7 +25,7 @@ h3.reviews__headline {
 
 @include breakpoint(large) {
     .reviews__list {
-        max-width: unset;
+        max-width: none;
 
         li {
             width: calc(50% - 10px);
