@@ -1,0 +1,34 @@
+@use '../styles/utils' as *;
+@use '../styles/scaffolding/variables' as *;
+
+.reviews {
+    @include container;
+}
+
+.reviews__headline {
+    margin-bottom: 34.5px;
+}
+
+.reviews__list {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 580px;
+    margin: 0 auto;
+
+    li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@include breakpoint(large) {
+    .reviews__list {
+        max-width: unset;
+
+        li {
+            width: calc(50% - 10px);
+        }
+    }
+}

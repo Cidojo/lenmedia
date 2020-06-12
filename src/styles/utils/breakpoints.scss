@@ -2,7 +2,7 @@ $breakpoints: (
     zero: 0,
     small: 375px,
     medium: 768px,
-    large: 1440px,
+    large: 1024px,
 ) !default;
 
 @function strip-unit($num) {

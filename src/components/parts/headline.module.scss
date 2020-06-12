@@ -1,16 +1,44 @@
 @use '../../styles/utils' as *;
 @use '../../styles/scaffolding/variables' as *;
 
+h2.headline {
+    font-size: 30px;
+}
+
+h3.headline {
+    font-size: 20px;
+
+    span {
+        width: 52.5px;
+    }
+}
+
+h4.headline {
+    font-size: 18px;
+
+    span {
+        width: 35px;
+    }
+}
+
 .headline {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     margin: 0;
-    font-size: 30px;
-    line-height: 36px;
+    line-height: 1.2em;
     font-weight: $font-weight-semibold;
     text-transform: uppercase;
+
+    &[align="center"] {
+        align-items: center;
+    }
+    &[align="left"] {
+        align-items: flex-start;
+    }
+    &[align="right"] {
+        align-items: flex-end;
+    }
 
     span {
         display: inline-block;
